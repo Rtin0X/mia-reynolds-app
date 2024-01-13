@@ -21,7 +21,7 @@ const AlbumSlider = () => {
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-    const {data, error} = useSWR('http://localhost:3001/albums', fetcher);
+    const {data, error} = useSWR('https://rtin0x.github.io/host-api/data.json', fetcher);
 
     if (error) return 'Failed to fetch data';
     if (!data) return 'Loading...';

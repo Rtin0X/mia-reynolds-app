@@ -2,7 +2,7 @@ import SectionHeader from "../SectionHeader";
 import EventBox from "./EventBox";
 
 const getEvents = async () => {
-    const res = await fetch('http://localhost:3001/events');
+    const res = await fetch('https://rtin0x.github.io/host-api/data.json');
     return res.json();
 };
 
